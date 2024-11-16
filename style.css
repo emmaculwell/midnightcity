@@ -6,11 +6,18 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  display: flex;          /* Add this */
+  flex-direction: column; /* Add this */
+  align-items: center;    /* Add this */
 }
 
 h1 {
   color: yellow;
   text-align: center;
+}
+
+p {
+  text-align: center;  /* Add this if you want the text centered within its width */
 }
 
 .window-container {
@@ -31,7 +38,7 @@ h1 {
 }
 
 .window {
-  width: 60px;  /* Changed from 100% to 60px */
+  width: 60px;
   height: 60px;
   border: 2px solid white;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
