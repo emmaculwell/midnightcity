@@ -10,20 +10,19 @@ body {
   align-items: center;
 }
 
-
 h1, h2, h3 {
   color: yellow; /* Yellow header text */
   text-align: center;
 }
 
-
 .window-container {
   position: fixed;
- 
-  width: 10%; 
+  top: 0;
+  bottom: 0;
+  width: 10%; /* Adjust as needed for window width */
   display: flex;
-  
-  justify-content: space-between;
+  flex-direction: column; /* Stack windows vertically */
+  justify-content: space-between; /* Distribute windows evenly */
   padding: 20px 0;
 }
 
@@ -36,11 +35,12 @@ h1, h2, h3 {
 }
 
 .window {
-  width: 80%; 
-  height: 10%; 
-  margin: 0 auto;
-  border: 2px solid white; 
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+  width: 80%; /* Adjust for window size */
+  height: 30%; /* Height of each window */
+  margin: 10px 0; /* Space between windows */
+  border: 2px solid white; /* Outline color */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Subtle glow effect */
   background: transparent;
 }
+
 
