@@ -11,35 +11,34 @@ body {
 }
 
 h1, h2, h3 {
-  color: yellow; /* Yellow header text */
+  color: yellow;
   text-align: center;
 }
 
 .window-container {
   position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 12%; /* Adjust this value to control the container width */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Offset by half height for perfect centering */
+  width: 12%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; /* Evenly distribute windows vertically */
-  padding: 20px 0; /* Padding to keep windows away from the edge */
+  gap: 20px; /* Consistent spacing between windows */
+  padding: 20px;
 }
 
 .left-windows {
-  left: 0;
+  left: 20px; /* Add some padding from the left edge */
 }
 
 .right-windows {
-  right: 0;
+  right: 20px; /* Add some padding from the right edge */
 }
 
 .window {
-  width: 100%; /* Full width of the container */
-  height: 100%; /* Full height of the container */
-  margin: 10px 0; /* Space between windows */
-  border: 2px solid white; /* Outline color */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Subtle glow effect */
+  width: 100%;
+  height: 60px; /* Fixed height instead of 100% */
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   background: transparent;
 }
 
