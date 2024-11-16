@@ -32,16 +32,16 @@ p {
 }
 
 .left-windows {
-  left: 20px;
+  left: 30px;
 }
 
 .right-windows {
-  right: 20px;
+  right: 30px;
 }
 
 .window {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   border: 2px solid white;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   background: transparent;
