@@ -19,11 +19,11 @@ h1, h2, h3 {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 10%; /* Adjust as needed for window width */
+  width: 15%; /* Adjust to control distance from sides */
   display: flex;
-  flex-direction: column; /* Stack windows vertically */
-  justify-content: space-between; /* Distribute windows evenly */
-  padding: 20px 0;
+  flex-direction: column;
+  justify-content: center; /* Centers the windows vertically */
+  padding: 0 10%; /* Adds padding on left and right to move windows further from edges */
 }
 
 .left-windows {
@@ -35,8 +35,8 @@ h1, h2, h3 {
 }
 
 .window {
-  width: 80%; /* Adjust for window size */
-  height: 30%; /* Height of each window */
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container, making it a square */
   margin: 10px 0; /* Space between windows */
   border: 2px solid white; /* Outline color */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Subtle glow effect */
