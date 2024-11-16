@@ -3,12 +3,9 @@ body {
   background: #1a1a40; 
   color: white; 
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  display: flex;          /* Add this */
-  flex-direction: column; /* Add this */
-  align-items: center;    /* Add this */
+  margin: 20px;
+  padding: 20px;
+
 }
 
 h1 {
